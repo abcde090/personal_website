@@ -1818,8 +1818,10 @@ img {
   color: #cc0066;
 }
 .page .main-content .information {
-  display: inline-block;
-  list-style: none;
+  position: relative;
+  top: 20%;
+  padding-left: 40px;
+ 
 }
 .page .main-content .information li {
   margin: 6px 0;
@@ -1827,6 +1829,8 @@ img {
 .page .main-content .information .title {
   display: inline-block;
   min-width: 120px;
+  font-weight: 900;
+  color: #cc0066;
 }
 
 .resume-page {
@@ -2032,7 +2036,7 @@ img {
   display: block;
   font-size: 0.9em;
   margin: 0;
-  padding: 10px 0 10px 50px;
+  padding: 10px 50px 10px 50px;
   width: 100%;
   background: transparent;
   text-align: left;
@@ -2316,5 +2320,10 @@ img {
   font-size: 0.8em;
   font-weight: 400;
 }
+
+.toggle {
+  display: none;
+}
+
 
 /*# sourceMappingURL=custom.css.map */
