@@ -1494,8 +1494,8 @@ body {
   background-repeat: no-repeat;
 }
 body footer {
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  top: 200px;
   left: 0;
   right: 0;
 }
@@ -1723,7 +1723,7 @@ img {
 }
 .page {
   position: relative;
-  top: 100px;
+  top: 150px;
   max-width: 1200px;
   width:90%;
   background-color: #fff;
@@ -1822,11 +1822,13 @@ img {
   position: relative;
   top: 20%;
   padding-left: 40px;
+  list-style-type: none;
  
 }
 .page .main-content .information li {
   margin: 6px 0;
 }
+
 .page .main-content .information .title {
   display: inline-block;
   min-width: 120px;
