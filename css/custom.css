@@ -2051,6 +2051,7 @@ img {
   height: 42px;
 }
 .btn {
+  max-width: 300px;
   border: none;
   top: 0.5em;
   display: block;

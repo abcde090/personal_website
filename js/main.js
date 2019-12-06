@@ -61,3 +61,13 @@ const toggling = () => {
   }
   more.style.display = "none";
 };
+
+
+document.querySelector(".send-message").addEventListener('click', function(){
+  Swal.fire(
+    'This is a fake form!',
+    'Please contact me via e-mail',
+    'success'
+  )
+});
+
