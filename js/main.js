@@ -6,6 +6,7 @@ const project_page = document.querySelector(".project-page");
 const site_menu = document.querySelector("#site-main-menu");
 const toggle = document.querySelectorAll(".toggle");
 const more = document.querySelector(".read-more");
+const more_project = document.querySelector(".more-project");
 
 const home = () => {
   homepage.style.display = "block";
@@ -60,6 +61,7 @@ const toggling = () => {
     toggle[i].style.display = "block";
   }
   more.style.display = "none";
+  more_project.style.display = "none";
 };
 
 
