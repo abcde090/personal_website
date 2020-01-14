@@ -5,6 +5,7 @@ const skill_page = document.querySelector(".skill-page");
 const project_page = document.querySelector(".project-page");
 const site_menu = document.querySelector("#site-main-menu");
 const toggle = document.querySelectorAll(".toggle");
+const dropdown = document.querySelectorAll(".dropdown");
 const more = document.querySelector(".read-more");
 const more_project = document.querySelector(".more-project");
 
@@ -61,6 +62,12 @@ const toggling = () => {
     toggle[i].style.display = "block";
   }
   more.style.display = "none";
+};
+
+const read_more = () => {
+  for (var i = 0; i < dropdown.length; i += 1) {
+    dropdown[i].style.display = "block";
+  }
   more_project.style.display = "none";
 };
 
