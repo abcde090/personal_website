@@ -1,811 +1,997 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dan Wang</title>
+    <link rel="stylesheet" href="./css/custom.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Dan Wang</title>
-  <link rel="stylesheet" href="./css/custom.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+  <body>
+    <!-- Header -->
+    <header class="site_header">
+      <div class="site-title-block">
+        <div class="site-title">Dan <span>Wang</span></div>
+      </div>
 
-</head>
+      <!-- Navigation -->
+      <div class="site-nav">
+        <!-- Main menu -->
+        <ul class="site-main-menu" id="site-main-menu">
+          <li><button class="pt-home" onclick="home()">Home</button></li>
+          <li><button class="pt-resume" onclick="resume()">Resume</button></li>
+          <li><button class="pt-skill" onclick="skill()">Skill</button></li>
+          <li>
+            <button class="pt-project" onclick="project()">Project</button>
+          </li>
+          <li>
+            <button class="pt-contact" onclick="contact()">Contact</button>
+          </li>
+          <a href="javascript:void(0);" class="icon" onclick="mobile()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </ul>
+        <!-- /Main menu -->
+      </div>
+      <!-- Navigation -->
+    </header>
 
-<body>
-  <!-- Header -->
-  <header class="site_header">
-    <div class="site-title-block">
-      <div class="site-title">Dan <span>Wang</span></div>
-    </div>
+    <!-- Body -->
+    <div class="wrapper">
+      <!-- Home Page -->
+      <div class="page home-page">
+        <div class="page-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="photo">
+                  <img src="images/photo.png" alt="photo" />
+                </div>
+              </div>
 
-    <!-- Navigation -->
-    <div class="site-nav">
-      <!-- Main menu -->
-      <ul class="site-main-menu" id="site-main-menu">
-        <li><button class="pt-home" onclick="home()">Home</button></li>
-        <li><button class="pt-resume" onclick="resume()">Resume</button></li>
-        <li><button class="pt-skill" onclick="skill()">Skill</button></li>
-        <li><button class="pt-project" onclick="project()">Project</button></li>
-        <li>
-          <button class="pt-contact" onclick="contact()">Contact</button>
-        </li>
-        <a href="javascript:void(0);" class="icon" onclick="mobile()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </ul>
-      <!-- /Main menu -->
-    </div>
-    <!-- Navigation -->
-  </header>
-
-
-
-
-  <!-- Body -->
-  <div class="wrapper">
-
-    <!-- Home Page -->
-    <div class="page home-page">
-      <div class="page-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="photo">
-                <img src="images/photo.png" alt="photo" />
+              <div class="col-sm-12 col-md-8 col-lg-8">
+                <div class="title">
+                  <h1>Dan Wang</h1>
+                  <p>Web developer</p>
+                </div>
+                <div class="social-bar">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100004572134269"
+                    class="fa fa-facebook"
+                  ></a>
+                  <a
+                    href="https://twitter.com/PolyUCrimina"
+                    class="fa fa-twitter"
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/criminawong/"
+                    class="fa fa-instagram"
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/dan-wang-au"
+                    class="fa fa-linkedin"
+                  ></a>
+                </div>
               </div>
             </div>
-
-            <div class="col-sm-12 col-md-8 col-lg-8">
-              <div class="title">
-                <h1>Dan Wang</h1>
-                <p>Web developer</p>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="about-me">
+                  <div class="block-title">
+                    <h3>About <span>Me</span></h3>
+                  </div>
+                  <p>
+                    Hello! I’m Dan Wang. I am a passionate web developer and
+                    full stack developer. I like programming a lot and I am
+                    experienced in PHP, Java, React and NodeJS. This is my
+                    personal website which lists all my past experience and
+                    projects. Feel free to contact me if needed.
+                  </p>
+                </div>
               </div>
-              <div class="social-bar">
-                <a href="https://www.facebook.com/profile.php?id=100004572134269" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/PolyUCrimina" class="fa fa-twitter"></a>
-                <a href="https://www.instagram.com/criminawong/" class="fa fa-instagram"></a>
-                <a href="https://www.linkedin.com/in/dan-wang-au" class="fa fa-linkedin"></a>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <ul class="information">
+                  <li>
+                    <span class="title">Age</span><span class="value">26</span>
+                  </li>
+                  <li>
+                    <span class="title">Residence</span
+                    ><span class="value">Australia</span>
+                  </li>
+                  <li>
+                    <span class="title">City</span
+                    ><span class="value">Brisbane</span>
+                  </li>
+                  <li>
+                    <span class="title">E-mail</span
+                    ><span class="value"
+                      ><a href="mailto:wnv-crimina@hotmail.com"
+                        >wnv-crimina@hotmail.com</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span class="title">Gender</span
+                    ><span class="value">Male</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="main-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="about-me">
-                <div class="block-title">
-                  <h3>About <span>Me</span></h3>
-                </div>
-                <p>
-                  Hello! I’m Dan Wang. I am a passionate web developer and full stack developer.
-                  I like programming a lot and I am experienced in PHP, Java, React and NodeJS. This is my personal website which lists all my past experience and projects.
-                  Feel free to contact me if needed. 
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <ul class="information">
-                <li>
-                  <span class="title">Age</span><span class="value">26</span>
-                </li>
-                <li>
-                  <span class="title">Residence</span><span class="value">Australia</span>
-                </li>
-                <li>
-                  <span class="title">City</span><span class="value">Brisbane</span>
-                </li>
-                <li>
-                  <span class="title">E-mail</span><span class="value"><a href="mailto:wnv-crimina@hotmail.com">wnv-crimina@hotmail.com</a></span>
-                </li>
-                <li>
-                  <span class="title">Gender</span><span class="value">Male</span>
-                </li>
-              </ul>
-            </div>
+
+      <!-- Resume Page -->
+      <div class="page resume-page">
+        <div class="page-header">
+          <div class="title">
+            <h2>Resume</h2>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Resume Page -->
-    <div class="page resume-page">
-      <div class="page-header">
-        <div class="title">
-          <h2>Resume</h2>
-        </div>
-      </div>
-      <div class="main-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-              <div class="block">
-                <div class="block-title">
-                  <h3>Education</h3>
-                </div>
-
-                <div class="timeline">
-                  <!-- Education 1 -->
-                  <div class="timeline-item">
-                    <h4 class="item-title">Master of Information Technology</h4>
-                    <span class="item-period">2019</span>
-                    <span class="item-small">University of Queensland</span>
-                    <p class="item-description">
-                      Software engineer, Data structures, Algorithm, Cloud computing, Web design and development, Database implementation, Human computer interaction
-                      
-                    </p>
-                    <p class="item-description">
-                        GPA 6.3/7 
-                      </p>
+        <div class="main-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="block">
+                  <div class="block-title">
+                    <h3>Education</h3>
                   </div>
-                  <!-- / Education 1 -->
 
-                  <!-- Education 2 -->
-                  <div class="timeline-item">
-                    <h4 class="item-title">Bachelor of Science in Chemical Technology</h4>
-                    <span class="item-period">2015</span>
-                    <span class="item-small">Hong Kong Polytechnic University</span>
-                    <p class="item-description">
-                      Organic chemistry, inorganic chemistry, chemical biology, physical chemistry, 
-                    </p>
-                    <p class="item-description">
-                        GPA 3.7/4.0 
-                      </p>
-                  </div>
-                  <!-- / Education 2 -->
-
-                  <!-- Education 3 -->
-                  <div class="timeline-item">
-                    <h4 class="item-title">Bachelor of Science</h4>
-                    <span class="item-period">2013</span>
-                    <span class="item-small">Sun Yat-sen University</span>
-                    <p class="item-description">
-                       Major in Chemistry
+                  <div class="timeline">
+                    <!-- Education 1 -->
+                    <div class="timeline-item">
+                      <h4 class="item-title">
+                        Master of Information Technology
+                      </h4>
+                      <span class="item-period">2019</span>
+                      <span class="item-small">University of Queensland</span>
+                      <p class="item-description">
+                        Software engineer, Data structures, Algorithm, Cloud
+                        computing, Web design and development, Database
+                        implementation, Human computer interaction
                       </p>
                       <p class="item-description">
-                          GPA 3.8/4.0 
-                        </p>
+                        GPA 6.3/7
+                      </p>
+                    </div>
+                    <!-- / Education 1 -->
+
+                    <!-- Education 2 -->
+                    <div class="timeline-item">
+                      <h4 class="item-title">
+                        Bachelor of Science in Chemical Technology
+                      </h4>
+                      <span class="item-period">2015</span>
+                      <span class="item-small"
+                        >Hong Kong Polytechnic University</span
+                      >
+                      <p class="item-description">
+                        Organic chemistry, inorganic chemistry, chemical
+                        biology, physical chemistry,
+                      </p>
+                      <p class="item-description">
+                        GPA 3.7/4.0
+                      </p>
+                    </div>
+                    <!-- / Education 2 -->
+
+                    <!-- Education 3 -->
+                    <div class="timeline-item">
+                      <h4 class="item-title">Bachelor of Science</h4>
+                      <span class="item-period">2013</span>
+                      <span class="item-small">Sun Yat-sen University</span>
+                      <p class="item-description">
+                        Major in Chemistry
+                      </p>
+                      <p class="item-description">
+                        GPA 3.8/4.0
+                      </p>
+                    </div>
+                    <!-- / Education 3 -->
                   </div>
-                  <!-- / Education 3 -->
-                </div>
 
-                <a class="btn" href="document/resume.pdf"><span>Download resume</span></a>
+                  <a class="btn" href="document/resume.pdf"
+                    ><span>Download resume</span></a
+                  >
+                </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-              <div class="block">
-                <div class="block-title">
-                  <h3>Experience</h3>
-                </div>
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="block">
+                  <div class="block-title">
+                    <h3>Experience</h3>
+                  </div>
 
-                <div class="timeline">
-                <!-- Experience 1 -->
-                <div class="timeline-item">
-                    <h4 class="item-title">Web development</h4>
-                    <span class="item-period">Nov 2019 -  Now</span>
-                    <span class="item-small">JR Academy</span>
-                    <p class="item-description">
-                      Participate in the front-end web development & backend web development for the company's websites.
-                    </p>
-                    <p class="item-description">
+                  <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                      <h4 class="item-title">Web development</h4>
+                      <span class="item-period">Nov 2019 - Now</span>
+                      <span class="item-small">JR Academy</span>
+                      <p class="item-description">
+                        Participate in the front-end web development & backend
+                        web development for the company's websites.
+                      </p>
+                      <p class="item-description">
                         - Project Management: Jira, bitbucket
-                    </p>
-                    <p class="item-description">
-                        - Front-end development: CSS, Sass, Pug (Jade), JavaScript, React, Redux, Bootstrap, jQuery, Ant Design Pro.
-                    </p>
-                    <p class="item-description">
-                        - Back-end development: Node.js, MongoDB, Mongoose, KeystoneJs, RESTful API.
-                    </p>
-                    <p class="item-description">
-                      -Project links:
-                    </p>
-                    <p class="item-description">
-                      -Official website: jiangren.com.au:
-                    </p>
-                    <p class="item-description">
-                      -Online learning system: learn.jiangren.com.au
-                    </p>
-                  </div>
-                  <!-- / Experience 1 -->
-                <!-- Experience 2 -->
-                <div class="timeline-item">
-                    <h4 class="item-title">PHP Web development</h4>
-                    <span class="item-period">July 2019 - Nov 2019</span>
-                    <span class="item-small">University of Queensland</span>
-                    <p class="item-description">
-                        Responsible for building an interactive gallery for displaying historical maps in State Library of Queensland, made from CSS, HTML, JavaScript and PHP. The features of the project include:
-                    </p>
-                    <p class="item-description">
+                      </p>
+                      <p class="item-description">
+                        - Front-end development: CSS, Sass, Pug (Jade),
+                        JavaScript, React, Redux, Bootstrap, jQuery, Ant Design
+                        Pro.
+                      </p>
+                      <p class="item-description">
+                        - Back-end development: Node.js, MongoDB, Mongoose,
+                        KeystoneJs, RESTful API.
+                      </p>
+                      <p class="item-description">
+                        -Project links:
+                      </p>
+                      <p class="item-description">
+                        -Official website: jiangren.com.au:
+                      </p>
+                      <p class="item-description">
+                        -Online learning system: learn.jiangren.com.au
+                      </p>
+                    </div>
+                    <!-- / Experience 1 -->
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                      <h4 class="item-title">PHP Web development</h4>
+                      <span class="item-period">July 2019 - Nov 2019</span>
+                      <span class="item-small">University of Queensland</span>
+                      <p class="item-description">
+                        Responsible for building an interactive gallery for
+                        displaying historical maps in State Library of
+                        Queensland, made from CSS, HTML, JavaScript and PHP. The
+                        features of the project include:
+                      </p>
+                      <p class="item-description">
                         - Login/Register as a user.
-                    </p>
-                    <p class="item-description">
-                        - Check all historical maps and modern maps, fetched from map API.
-                    </p>
-                    <p class="item-description">
+                      </p>
+                      <p class="item-description">
+                        - Check all historical maps and modern maps, fetched
+                        from map API.
+                      </p>
+                      <p class="item-description">
                         - Play the interactive map flipping game and quiz.
-                    </p>
-                  </div>
-                  <!-- / Experience 2 -->
-                <!-- Experience 3 -->
-                <div class="timeline-item">
-                    <h4 class="item-title">NodeJS and React development</h4>
-                    <span class="item-period">July 2019 - Nov 2019</span>
-                    <span class="item-small">University of Queensland</span>
-                    <p class="item-description">
-                        Responsible for building an online content management system (CMS) for staff seating and allocation, with React Redux, MaterialUI, Hooks,NodeJS and MongoDB. The features of the project include:
-                    </p>
-                    <p class="item-description">
+                      </p>
+                    </div>
+                    <!-- / Experience 2 -->
+                    <!-- Experience 3 -->
+                    <div class="timeline-item">
+                      <h4 class="item-title">NodeJS and React development</h4>
+                      <span class="item-period">July 2019 - Nov 2019</span>
+                      <span class="item-small">University of Queensland</span>
+                      <p class="item-description">
+                        Responsible for building an online content management
+                        system (CMS) for staff seating and allocation, with
+                        React Redux, MaterialUI, Hooks,NodeJS and MongoDB. The
+                        features of the project include:
+                      </p>
+                      <p class="item-description">
                         - Login as admin.
-                    </p>
-                    <p class="item-description">
+                      </p>
+                      <p class="item-description">
                         - Add/remove a seat from the interactive map.
-                    </p>
-                    <p class="item-description">
+                      </p>
+                      <p class="item-description">
                         - Modify and change staff information.
-                    </p>
-                  </div>
-                  <!-- / Experience 3 -->
-                <!-- Experience 4 -->
-                <div class="timeline-item toggle">
-                    <h4 class="item-title">Apache Spark development</h4>
-                    <span class="item-period">July 2019 - Nov 2019</span>
-                    <span class="item-small">University of Queensland</span>
-                    <p class="item-description">
-                        Responsible for building a job recommendation system, with Apache Spark, PHP, MySQL, docker, Google cloud platform. The features of the project include:
-                    </p>
-                    <p class="item-description">
-                        - Job recommendation based on user’s information with Apache Spark MLlib.
-                    </p>
-                    <p class="item-description">
+                      </p>
+                    </div>
+                    <!-- / Experience 3 -->
+                    <!-- Experience 4 -->
+                    <div class="timeline-item toggle">
+                      <h4 class="item-title">Apache Spark development</h4>
+                      <span class="item-period">July 2019 - Nov 2019</span>
+                      <span class="item-small">University of Queensland</span>
+                      <p class="item-description">
+                        Responsible for building a job recommendation system,
+                        with Apache Spark, PHP, MySQL, docker, Google cloud
+                        platform. The features of the project include:
+                      </p>
+                      <p class="item-description">
+                        - Job recommendation based on user’s information with
+                        Apache Spark MLlib.
+                      </p>
+                      <p class="item-description">
                         - Project packaged with docker containers.
-                    </p>
-                    <p class="item-description">
+                      </p>
+                      <p class="item-description">
                         - Deployed on Google Compute Engine.
-                    </p>
-                  </div>
-                  <!-- / Experience 4 -->
-                  <!-- Experience 5 -->
-                  <div class="timeline-item toggle">
-                    <h4 class="item-title">PHP development</h4>
-                    <span class="item-period">March 2019 - June 2019</span>
-                    <span class="item-small">University of Queensland</span>
-                    <p class="item-description">
-                        Build an online food ordering system with PHP framework (CodeIgniter) with MVC design pattern. The features of the project include:
-                    </p>
-                    <p class="item-description">
-                        - Login/register system with the verification feature through e-mail.
-                    </p>
-                    <p class="item-description">
+                      </p>
+                    </div>
+                    <!-- / Experience 4 -->
+                    <!-- Experience 5 -->
+                    <div class="timeline-item toggle">
+                      <h4 class="item-title">PHP development</h4>
+                      <span class="item-period">March 2019 - June 2019</span>
+                      <span class="item-small">University of Queensland</span>
+                      <p class="item-description">
+                        Build an online food ordering system with PHP framework
+                        (CodeIgniter) with MVC design pattern. The features of
+                        the project include:
+                      </p>
+                      <p class="item-description">
+                        - Login/register system with the verification feature
+                        through e-mail.
+                      </p>
+                      <p class="item-description">
                         - Shopping cart with adding/removing items
-                    </p>
-                    <p class="item-description">
+                      </p>
+                      <p class="item-description">
                         - Inserting dishes and leave a comment
-                    </p>
-                  </div>
-                  <!-- / Experience 5 -->
+                      </p>
+                    </div>
+                    <!-- / Experience 5 -->
 
-                  <!-- Experience 6 -->
-                  <div class="timeline-item toggle">
-                    <h4 class="item-title">Full stack development</h4>
-                    <span class="item-period">Dec 2018 - March 2019</span>
-                    <span class="item-small">JR Academy</span>
-                    <p class="item-description">
-                        Responsible for a staff leave management system using React, Node.js, MongoDB, Ant Design, Restful APIs with 3 other team members. The features of the project include:
-                    </p>
-                    <p class="item-description">
+                    <!-- Experience 6 -->
+                    <div class="timeline-item toggle">
+                      <h4 class="item-title">Full stack development</h4>
+                      <span class="item-period">Dec 2018 - March 2019</span>
+                      <span class="item-small">JR Academy</span>
+                      <p class="item-description">
+                        Responsible for a staff leave management system using
+                        React, Node.js, MongoDB, Ant Design, Restful APIs with 3
+                        other team members. The features of the project include:
+                      </p>
+                      <p class="item-description">
                         - Staff apply for a leave
-                    </p>
-                    <p class="item-description">
+                      </p>
+                      <p class="item-description">
                         - Admin approve or reject the application
-                    </p>
-                    <p class="item-description">
-                        - Project deployed on AWS: <a href="http://jr-eleave.s3-website-ap-southeast-2.amazonaws.com/">view here </a>
-                    </p>
-                  </div>
-                  <!-- / Experience 6-->
-
-                  <!-- Experience 7 -->
-                  <div class="timeline-item toggle">
-                    <h4 class="item-title">Studio project</h4>
-                    <span class="item-period">Jul 2018 - Nov 2018</span>
-                    <span class="item-small">University of Queensland</span>
-                    <p class="item-description">
-                        Participated in a studio-based programming projects using Java, covering a broad understanding of :
-                        <p class="item-description">
-                            - software verification & validation and configuration management;
-                        </p>
-                        <p class="item-description">
-                            - project management and team work using GIT;
-                        </p>
-                        <p class="item-description">
-                            - software & project design process & documentation with design pattern.
-                        </p>  
-                    </p>
-                  </div>
-                  <!-- / Experience 7 -->
-                  <button class="btn read-more" onclick="toggling()"><span>More experience</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-   <!--        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-              <div class="block">
-                <div class="block-title">
-                  <h3>Design <span>Skills</span></h3>
-                </div>
-
-                <div class="skills-info">
-                  <h4>Web Design</h4>
-                  <div class="skill-container">
-                    <div class="skill-percentage skill-1"></div>
-                  </div>
-
-                  <h4>Graphic Design</h4>
-                  <div class="skill-container">
-                    <div class="skill-percentage skill-2"></div>
-                  </div>
-
-                  <h4>Print Design</h4>
-                  <div class="skill-container">
-                    <div class="skill-percentage skill-3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-              <div class="block">
-                <div class="block-title">
-                  <h3>Coding <span>Skills</span></h3>
-                </div>
-
-                <div class="skills-info">
-                  <h4>HTML5</h4>
-                  <div class="skill-container">
-                    <div class="skill-percentage skill-4"></div>
-                  </div>
-
-                  <h4>CSS3/LESS/SASS</h4>
-                  <div class="skill-container">
-                    <div class="skill-percentage skill-5"></div>
-                  </div>
-
-                  <h4>jQuery</h4>
-                  <div class="skill-container">
-                    <div class="skill-percentage skill-6"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </div>
-
-    <!-- Skill -->
-    <div class="page skill-page">
-      <div class="page-header">
-        <div class="title">
-          <h2>Skill</h2>
-        </div>
-      </div>
-      <div class="main-content">
-        <!-- My Services -->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12">
-              <div class="block-title">
-                <h3>My <span>Skills</span></h3>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-              <div class="service-block">
-                <div class="service-info">
-                  <!--<i class="service-icon fa fa-shopping-cart"></i>-->
-                  <div class="service-image">
-                    <img src="images/web_design_icon.png" alt="Responsive Design" class="mCS_img_loaded" />
-                  </div>
-                  <h4>Web Design</h4>
-                  <p>
-                    Web design with use-centred design principles
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-              <div class="service-block">
-                <div class="service-info">
-                  <div class="service-image">
-                    <img src="images/front_end.png" alt="Photography" class="mCS_img_loaded" />
-                  </div>
-                  <h4>Front end</h4>
-                  <p>
-                    Build front-end part of the website with html, css, javascript. Libraries 
-                    such as jQuery, react, Angular will also be used. 
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-              <div class="service-block">
-                <div class="service-info">
-                  <div class="service-image">
-                    <img src="images/back_end2.png" alt="Creativity" class="mCS_img_loaded" />
-                  </div>
-                  <h4>Back end</h4>
-                  <p>
-                    Build server-side website with the skills such as python, Java, PHP, nodejs or .NET.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-              <div class="service-block">
-                <div class="service-info">
-                  <div class="service-image">
-                    <img src="images/full_stack.png" alt="Advetising" class="mCS_img_loaded" />
-                  </div>
-                  <h4>Full stack</h4>
-                  <p>
-                    Build both client softwares and server softwares with database implementation(SQL, MangoDB).
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- End of My Services -->
-
-          <!-- Skills -->
-          <div class="row">
-            <div class="col-sm-12 col-md-12">
-              <div class="block-title">
-                <h3>Technologies</h3>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2">
-              <div class="skill-block">
-                <p><img src="images/nodejs.svg" alt="image" class="mCS_img_loaded" /></p>
-              </div>
-            </div>
-
-            <div class="col-6 col-sm-4 col-md-2">
-              <div class="skill-block">
-                <p><img src="images/icons8-angularjs.svg" alt="image" class="mCS_img_loaded" /></p>
-              </div>
-            </div>
-
-            <div class="col-6 col-sm-4 col-md-2">
-              <div class="skill-block">
-                <p><img src="images/net.png" alt="image" class="mCS_img_loaded" /></p>
-              </div>
-            </div>
-
-            <div class="col-6 col-sm-4 col-md-2">
-              <div class="skill-block">
-                <p><img src="images/react.svg" alt="image" class="mCS_img_loaded" /></p>
-              </div>
-            </div>
-
-            <div class="col-6 col-sm-4 col-md-2">
-              <div class="skill-block">
-                <p><img src="images/php.png" alt="image" class="mCS_img_loaded" /></p>
-              </div>
-            </div>
-
-            <div class="col-6 col-sm-4 col-md-2">
-              <div class="skill-block">
-                <p><img src="images/icons8-java.svg" alt="image" class="mCS_img_loaded" /></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of Skills -->
-      </div>
-    </div>
-
-    <!-- End of Services Subpage -->
-
-    <!-- Project -->
-    <div class="page project-page">
-      <div class="page-header">
-        <div class="title">
-          <h2>Project</h2>
-        </div>
-      </div>
-      <div class="main-content">
-
-        <div class="container">
-          <div class="row">
-            <!-- Blog Post 1 -->
-            <div class="col-sm-6 col-md-4">
-              <div class="blog-card">
-                <div class="media-block">
-                  <a href="https://abcde090.github.io/weather-app-react/">
-                    <img class="post-image img-responsive" src="images/weather-app.png" alt="blog-post-2">
-                    <div class="mask"></div>
-                    <div class="post-date"><span class="year">2019</span><span class="month">Feb</span>
-                
-                    </div>
-                  </a>
-                </div>
-                <div class="post-info">
-                  <ul class="category">
-                      <li>React weather app</li>
-                  </ul>
-                    <h4 class="blog-item-title">Check the weather forecast, built from React and NodeJS</h4>
-                </div>
-              </div>
-            </div>
-            <!-- End of Blog Post 1 -->
-
-            <!-- Blog Post 2 -->
-            <div class="col-sm-6 col-md-4">
-              <div class="blog-card">
-                <div class="media-block">
-                    <a href="http://jr-eleave.s3-website-ap-southeast-2.amazonaws.com/">
-                      <img class="post-image img-responsive" src="images/E-leave.png" alt="blog-post-2">
-                    <div class="mask"></div>
-                    <div class="post-date"><span class="year">2019</span><span class="month">March</span>
-    
-                    </div>
-                  </a>
-                </div>
-                <div class="post-info">
-                  <ul class="category">
-                    <li>JR Academy Staff Leave Management System</li>
-                  </ul>
-                    <h4 class="blog-item-title">A management system made from React, NodeJS, MongoDB and Ant Design.</h4>
-                </div>
-              </div>
-            </div>
-
-          
-          <!-- End of Blog Post 2 -->
-
-          <!-- Blog Post 3 -->
-          <div class="col-sm-6 col-md-4">
-            <div class="blog-card">
-              <div class="media-block">
-                <a href="https://s4305352-deco7180.uqcloud.net/food_ordering_MVC/index.php">
-                  <img class="post-image img-responsive" src="images/food_ordering_website.png" alt="blog-post-3">
-                  <div class="mask"></div>
-                  <div class="post-date"><span class="year">2019</span><span class="month">June</span>
-                  </div>
-                </a>
-              </div>
-              <div class="post-info">
-                <ul class="category">
-                    <li>Online food ordering system </li>
-                </ul>
-                  <h4 class="blog-item-title">Online food ordering system built with PHP CodeIgniter</h4>
-              </div>
-            </div>
-          </div>
-
-          <!-- End of Blog Post 3 -->
-
-          <!-- Blog Post 4 -->
-          <div class="col-sm-6 col-md-4">
-            <div class="blog-card">
-              <div class="media-block">
-                <a href="https://deco7180-c02t08.uqcloud.net/index.php">
-                  <img class="post-image img-responsive" src="images/deco7180.png" alt="blog-post-4">
-                  <div class="mask"></div>
-                  <div class="post-date"><span class="year">2019</span><span class="month">Oct</span>
-      
-                  </div>
-                </a>
-              </div>
-              <div class="post-info">
-                <ul class="category">
-                    <li>Digitised Map Gallery</li>
-                </ul>
-                  <h4 class="blog-item-title">An interactive historical map gallery built with PHP, JavaScript</h4>
-              </div>
-            </div>
-          </div>
-          <!-- End of Blog Post 4 -->
-
-          <!-- Blog Post 5 -->
-          <div class="col-sm-6 col-md-4">
-            <div class="blog-card">
-              <div class="media-block">
-                <a href="https://s4305352-deco7180.uqcloud.net/deco7381/index.php">
-                  <img class="post-image img-responsive" src="images/staffmap.png" alt="blog-post-5">
-                  <div class="mask"></div>
-                  <div class="post-date"><span class="year">2019</span><span class="month">Oct</span>
-                   
-                  </div>
-                </a>
-              </div>
-              <div class="post-info">
-                <ul class="category">
-                    <li>QAFFI Staffmap</li>
-                </ul>
-   
-                  <h4 class="blog-item-title">An introductory website to a staff allocation project</h4>
-    
-              </div>
-            </div>
-          </div>
-          <!-- End of Blog Post 5 --> 
-          <!-- Blog Post 6 -->
-          <div class="col-sm-6 col-md-4">
-            <div class="blog-card">
-              <div class="media-block">
-                  <a href="https://s4305352-deco7180.uqcloud.net/javaScriptGame/">
-                    <img class="post-image img-responsive" src="images/JR-academy.png" alt="blog-post-2">
-                  <div class="mask"></div>
-                  <div class="post-date"><span class="year">2020</span><span class="month">Jan</span>
-
-                  </div>
-                </a>
-              </div>
-              <div class="post-info">
-                <ul class="category">
-                  <li>JR Academy Official Website</li>
-                </ul>
-                  <h4 class="blog-item-title">JR Academy's official website, made from SASS, Pug, NodeJS, MongoDB.</h4>
-              </div>
-            </div>
-          </div>
-          <!-- End of Blog Post 6 -->
-          <!-- Blog Post 7 -->
-                   <div class="col-sm-6 col-md-4 dropdown">
-                    <div class="blog-card">
-                      <div class="media-block">
-                          <a href="https://s4305352-deco7180.uqcloud.net/javaScriptGame/">
-                            <img class="post-image img-responsive" src="images/JR-academy-learn.png" alt="blog-post-2">
-                          <div class="mask"></div>
-                          <div class="post-date"><span class="year">2020</span><span class="month">Jan</span>
-        
-                          </div>
+                      </p>
+                      <p class="item-description">
+                        - Project deployed on AWS:
+                        <a
+                          href="http://jr-eleave.s3-website-ap-southeast-2.amazonaws.com/"
+                          >view here
                         </a>
+                      </p>
+                    </div>
+                    <!-- / Experience 6-->
+
+                    <!-- Experience 7 -->
+                    <div class="timeline-item toggle">
+                      <h4 class="item-title">Studio project</h4>
+                      <span class="item-period">Jul 2018 - Nov 2018</span>
+                      <span class="item-small">University of Queensland</span>
+                      <p class="item-description">
+                        Participated in a studio-based programming projects
+                        using Java, covering a broad understanding of :
+                      </p>
+                      <p class="item-description">
+                        - software verification & validation and configuration
+                        management;
+                      </p>
+                      <p class="item-description">
+                        - project management and team work using GIT;
+                      </p>
+                      <p class="item-description">
+                        - software & project design process & documentation with
+                        design pattern.
+                      </p>
+                    </div>
+                    <!-- / Experience 7 -->
+                    <!-- Experience 8 -->
+                    <div class="timeline-item toggle">
+                      <h4 class="item-title">Software Development</h4>
+                      <span class="item-period">Sep 2016 - Dec 2017</span>
+                      <span class="item-small">Guangzhou Spark Technology</span>
+                      <p class="item-description">
+                        Work as a junior software engineer to help the company
+                        develop its e-commerce website for automobile light
+                        products. Responsibilities:
+                      </p>
+                      <p class="item-description">
+                        - Maintenance of the Java code base of company's e-commerce website
+                      </p>
+                      <p class="item-description">
+                        - Update of content stored in the database(MySQL)
+                      </p>
+                      <p class="item-description">
+                        - Deployment of code through all environments to production
+                      </p>
+                      <p class="item-description">
+                        Technologies/Frameworks used: Java, Spring Boot, JSP, Servlet, REST, JavaScript, HTML, CSS, JUnit, Git, JSON, Jira, MySQL.
+                      </p>
+                    </div>
+                    <!-- / Experience 7 -->
+                    <button class="btn read-more" onclick="toggling()">
+                      <span>More experience</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill -->
+      <div class="page skill-page">
+        <div class="page-header">
+          <div class="title">
+            <h2>Skill</h2>
+          </div>
+        </div>
+        <div class="main-content">
+          <!-- My Services -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <div class="block-title">
+                  <h3>My <span>Skills</span></h3>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="service-block">
+                  <div class="service-info">
+                    <!--<i class="service-icon fa fa-shopping-cart"></i>-->
+                    <div class="service-image">
+                      <img
+                        src="images/web_design_icon.png"
+                        alt="Responsive Design"
+                        class="mCS_img_loaded"
+                      />
+                    </div>
+                    <h4>Web Design</h4>
+                    <p>
+                      Web design with use-centred design principles
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="service-block">
+                  <div class="service-info">
+                    <div class="service-image">
+                      <img
+                        src="images/front_end.png"
+                        alt="Photography"
+                        class="mCS_img_loaded"
+                      />
+                    </div>
+                    <h4>Front end</h4>
+                    <p>
+                      Build front-end part of the website with html, css,
+                      javascript. Libraries such as jQuery, react, Angular will
+                      also be used.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="service-block">
+                  <div class="service-info">
+                    <div class="service-image">
+                      <img
+                        src="images/back_end2.png"
+                        alt="Creativity"
+                        class="mCS_img_loaded"
+                      />
+                    </div>
+                    <h4>Back end</h4>
+                    <p>
+                      Build server-side website with the skills such as python,
+                      Java, PHP, nodejs or .NET.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="service-block">
+                  <div class="service-info">
+                    <div class="service-image">
+                      <img
+                        src="images/full_stack.png"
+                        alt="Advetising"
+                        class="mCS_img_loaded"
+                      />
+                    </div>
+                    <h4>Full stack</h4>
+                    <p>
+                      Build both client softwares and server softwares with
+                      database implementation(SQL, MangoDB).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End of My Services -->
+
+            <!-- Skills -->
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <div class="block-title">
+                  <h3>Technologies</h3>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="skill-block">
+                  <p>
+                    <img
+                      src="images/nodejs.svg"
+                      alt="image"
+                      class="mCS_img_loaded"
+                    />
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="skill-block">
+                  <p>
+                    <img
+                      src="images/icons8-angularjs.svg"
+                      alt="image"
+                      class="mCS_img_loaded"
+                    />
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="skill-block">
+                  <p>
+                    <img
+                      src="images/net.png"
+                      alt="image"
+                      class="mCS_img_loaded"
+                    />
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="skill-block">
+                  <p>
+                    <img
+                      src="images/react.svg"
+                      alt="image"
+                      class="mCS_img_loaded"
+                    />
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="skill-block">
+                  <p>
+                    <img
+                      src="images/php.png"
+                      alt="image"
+                      class="mCS_img_loaded"
+                    />
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-2">
+                <div class="skill-block">
+                  <p>
+                    <img
+                      src="images/icons8-java.svg"
+                      alt="image"
+                      class="mCS_img_loaded"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Skills -->
+        </div>
+      </div>
+
+      <!-- End of Services Subpage -->
+
+      <!-- Project -->
+      <div class="page project-page">
+        <div class="page-header">
+          <div class="title">
+            <h2>Project</h2>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="container">
+            <div class="row">
+              <!-- Blog Post 1 -->
+              <div class="col-sm-6 col-md-4">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <a href="https://abcde090.github.io/weather-app-react/">
+                      <img
+                        class="post-image img-responsive"
+                        src="images/weather-app.png"
+                        alt="blog-post-2"
+                      />
+                      <div class="mask"></div>
+                      <div class="post-date">
+                        <span class="year">2019</span
+                        ><span class="month">Feb</span>
                       </div>
-                      <div class="post-info">
-                        <ul class="category">
-                          <li>JR Academy Online Learning Management System</li>
-                        </ul>
-                          <h4 class="blog-item-title">A LMS made from React, Redux, NodeJS, MongoDB and Ant Design.</h4>
+                    </a>
+                  </div>
+                  <div class="post-info">
+                    <ul class="category">
+                      <li>React weather app</li>
+                    </ul>
+                    <h4 class="blog-item-title">
+                      Check the weather forecast, built from React and NodeJS
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Blog Post 1 -->
+
+              <!-- Blog Post 2 -->
+              <div class="col-sm-6 col-md-4">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <a
+                      href="http://jr-eleave.s3-website-ap-southeast-2.amazonaws.com/"
+                    >
+                      <img
+                        class="post-image img-responsive"
+                        src="images/E-leave.png"
+                        alt="blog-post-2"
+                      />
+                      <div class="mask"></div>
+                      <div class="post-date">
+                        <span class="year">2019</span
+                        ><span class="month">March</span>
                       </div>
+                    </a>
+                  </div>
+                  <div class="post-info">
+                    <ul class="category">
+                      <li>JR Academy Staff Leave Management System</li>
+                    </ul>
+                    <h4 class="blog-item-title">
+                      A management system made from React, NodeJS, MongoDB and
+                      Ant Design.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End of Blog Post 2 -->
+
+              <!-- Blog Post 3 -->
+              <div class="col-sm-6 col-md-4">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <a
+                      href="https://s4305352-deco7180.uqcloud.net/food_ordering_MVC/index.php"
+                    >
+                      <img
+                        class="post-image img-responsive"
+                        src="images/food_ordering_website.png"
+                        alt="blog-post-3"
+                      />
+                      <div class="mask"></div>
+                      <div class="post-date">
+                        <span class="year">2019</span
+                        ><span class="month">June</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="post-info">
+                    <ul class="category">
+                      <li>Online food ordering system</li>
+                    </ul>
+                    <h4 class="blog-item-title">
+                      Online food ordering system built with PHP CodeIgniter
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End of Blog Post 3 -->
+
+              <!-- Blog Post 4 -->
+              <div class="col-sm-6 col-md-4">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <a href="https://deco7180-c02t08.uqcloud.net/index.php">
+                      <img
+                        class="post-image img-responsive"
+                        src="images/deco7180.png"
+                        alt="blog-post-4"
+                      />
+                      <div class="mask"></div>
+                      <div class="post-date">
+                        <span class="year">2019</span
+                        ><span class="month">Oct</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="post-info">
+                    <ul class="category">
+                      <li>Digitised Map Gallery</li>
+                    </ul>
+                    <h4 class="blog-item-title">
+                      An interactive historical map gallery built with PHP,
+                      JavaScript
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Blog Post 4 -->
+
+              <!-- Blog Post 5 -->
+              <div class="col-sm-6 col-md-4">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <a
+                      href="https://s4305352-deco7180.uqcloud.net/deco7381/index.php"
+                    >
+                      <img
+                        class="post-image img-responsive"
+                        src="images/staffmap.png"
+                        alt="blog-post-5"
+                      />
+                      <div class="mask"></div>
+                      <div class="post-date">
+                        <span class="year">2019</span
+                        ><span class="month">Oct</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="post-info">
+                    <ul class="category">
+                      <li>QAFFI Staffmap</li>
+                    </ul>
+
+                    <h4 class="blog-item-title">
+                      An introductory website to a staff allocation project
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Blog Post 5 -->
+              <!-- Blog Post 6 -->
+              <div class="col-sm-6 col-md-4">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <a
+                      href="https://s4305352-deco7180.uqcloud.net/javaScriptGame/"
+                    >
+                      <img
+                        class="post-image img-responsive"
+                        src="images/JR-academy.png"
+                        alt="blog-post-2"
+                      />
+                      <div class="mask"></div>
+                      <div class="post-date">
+                        <span class="year">2020</span
+                        ><span class="month">Jan</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="post-info">
+                    <ul class="category">
+                      <li>JR Academy Official Website</li>
+                    </ul>
+                    <h4 class="blog-item-title">
+                      JR Academy's official website, made from SASS, Pug,
+                      NodeJS, MongoDB.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Blog Post 6 -->
+              <!-- Blog Post 7 -->
+              <div class="col-sm-6 col-md-4 dropdown">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <a
+                      href="https://s4305352-deco7180.uqcloud.net/javaScriptGame/"
+                    >
+                      <img
+                        class="post-image img-responsive"
+                        src="images/JR-academy-learn.png"
+                        alt="blog-post-2"
+                      />
+                      <div class="mask"></div>
+                      <div class="post-date">
+                        <span class="year">2020</span
+                        ><span class="month">Jan</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="post-info">
+                    <ul class="category">
+                      <li>JR Academy Online Learning Management System</li>
+                    </ul>
+                    <h4 class="blog-item-title">
+                      A LMS made from React, Redux, NodeJS, MongoDB and Ant
+                      Design.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Blog Post 7 -->
+              <!-- Blog Post 8 -->
+              <div class="col-sm-6 col-md-4 dropdown">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <a href="https://s4305352-deco7180.uqcloud.net/portfolio/">
+                      <img
+                        class="post-image img-responsive"
+                        src="images/portofolio.png"
+                        alt="blog-post-6"
+                      />
+                      <div class="mask"></div>
+                      <div class="post-date">
+                        <span class="year">2019</span
+                        ><span class="month">Oct</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="post-info">
+                    <ul class="category">
+                      <li>Portfolio</li>
+                    </ul>
+                    <h4 class="blog-item-title">
+                      A self introductory website made from HTML, CSS, JS
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Blog Post 8 -->
+            </div>
+            <button class="btn more-project" onclick="read_more()">
+              <span>More projects</span>
+            </button>
+          </div>
+          <!-- Blog Posts Grid -->
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="page contact-page">
+        <div class="page-header">
+          <div class="title">
+            <h2>Contact</h2>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <div class="block-title">
+                  <h3>Get in <span>Touch</span></h3>
+                </div>
+                <!-- Google Map -->
+                <div class="google-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28316.223256452642!2d153.02668393955082!3d-27.4839531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1546928925845"
+                    width="600"
+                    height="450"
+                    frameborder="0"
+                    style="border:0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="contact-info-block">
+                  <div class="ci-icon"><i class="fa fa-map-marker"></i></div>
+                  <div class="ci-text">
+                    <h5>Brisbane, Australia</h5>
+                  </div>
+                </div>
+                <div class="contact-info-block">
+                  <div class="ci-icon"><i class="fa fa-envelope"></i></div>
+                  <div class="ci-text">
+                    <h5>wnv-crimina@hotmail.com</h5>
+                  </div>
+                </div>
+                <div class="contact-info-block">
+                  <div class="ci-icon"><i class="fa fa-phone"></i></div>
+                  <div class="ci-text">
+                    <h5>+0434419121</h5>
+                  </div>
+                </div>
+                <div class="contact-info-block">
+                  <div class="ci-icon"><i class="fa fa-check"></i></div>
+                  <div class="ci-text">
+                    <h5>currently available for new job</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-6">
+                <div class="block-title">
+                  <h3>Contact <span>Form</span></h3>
+                </div>
+                <form id="contact-form" novalidate="true">
+                  <div class="messages"></div>
+
+                  <div class="controls">
+                    <div class="form-group form-group-with-icon">
+                      <i class="fa fa-user"></i>
+                      <input
+                        id="form_name"
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Full Name"
+                        required="required"
+                        data-error="Name is required."
+                      />
+                      <div class="form-control-border"></div>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group form-group-with-icon">
+                      <i class="fa fa-envelope"></i>
+                      <input
+                        id="form_email"
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Email Address"
+                        required="required"
+                        data-error="Valid email is required."
+                      />
+                      <div class="form-control-border"></div>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group form-group-with-icon">
+                      <i class="fa fa-comment"></i>
+                      <textarea
+                        id="form_message"
+                        name="message"
+                        class="form-control"
+                        placeholder="Message for Me"
+                        rows="4"
+                        required="required"
+                        data-error="Please, leave me a message."
+                      ></textarea>
+                      <div class="form-control-border"></div>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="btn send-message">
+                      <span>Send message</span>
                     </div>
                   </div>
-        <!-- End of Blog Post 7 -->
-         <!-- Blog Post 8 -->
-         <div class="col-sm-6 col-md-4 dropdown">
-          <div class="blog-card">
-            <div class="media-block">
-              <a href="https://s4305352-deco7180.uqcloud.net/portfolio/">
-                <img class="post-image img-responsive" src="images/portofolio.png" alt="blog-post-6">
-                <div class="mask"></div>
-                <div class="post-date"><span class="year">2019</span><span class="month">Oct</span>
-         
-                </div>
-              </a>
-            </div>
-            <div class="post-info">
-              <ul class="category">
-                  <li>Portfolio</li>
-              </ul>
-                <h4 class="blog-item-title">A self introductory website made from HTML, CSS, JS</h4>
-            </div>
-          </div>
-        </div>
-         <!-- End of Blog Post 8 -->
-        </div> 
-        <button class="btn more-project" onclick="read_more()"><span>More projects</span></button>
-        </div>
-        <!-- Blog Posts Grid -->
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <div class="page contact-page">
-      <div class="page-header">
-        <div class="title">
-          <h2>Contact</h2>
-        </div>
-      </div>
-      <div class="page-content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-6 col-md-6">
-              <div class="block-title">
-                <h3>Get in <span>Touch</span></h3>
+                </form>
               </div>
-              <!-- Google Map -->
-              <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28316.223256452642!2d153.02668393955082!3d-27.4839531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1546928925845"
-                  width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div>
-
-              <div class="contact-info-block">
-                <div class="ci-icon"><i class="fa fa-map-marker"></i></div>
-                <div class="ci-text">
-                  <h5>Brisbane, Australia</h5>
-                </div>
-              </div>
-              <div class="contact-info-block">
-                <div class="ci-icon"><i class="fa fa-envelope"></i></div>
-                <div class="ci-text">
-                  <h5>wnv-crimina@hotmail.com</h5>
-                </div>
-              </div>
-              <div class="contact-info-block">
-                <div class="ci-icon"><i class="fa fa-phone"></i></div>
-                <div class="ci-text">
-                  <h5>+0434419121</h5>
-                </div>
-              </div>
-              <div class="contact-info-block">
-                <div class="ci-icon"><i class="fa fa-check"></i></div>
-                <div class="ci-text">
-                  <h5>currently available for new job</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6">
-              <div class="block-title">
-                <h3>Contact <span>Form</span></h3>
-              </div>
-              <form id="contact-form" novalidate="true">
-                <div class="messages"></div>
-
-                <div class="controls">
-                  <div class="form-group form-group-with-icon">
-                    <i class="fa fa-user"></i> 
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required"
-                      data-error="Name is required." />
-                    <div class="form-control-border"></div>
-                    <div class="help-block with-errors"></div>
-                  </div>
-
-                  <div class="form-group form-group-with-icon">
-                    <i class="fa fa-envelope"></i>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required"
-                      data-error="Valid email is required." />
-                    <div class="form-control-border"></div>
-                    <div class="help-block with-errors"></div>
-                  </div>
-
-                  <div class="form-group form-group-with-icon">
-                    <i class="fa fa-comment"></i>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for Me" rows="4" required="required"
-                      data-error="Please, leave me a message."></textarea>
-                    <div class="form-control-border"></div>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                  <div class="btn send-message"><span>Send message</span></div>
-                </div>
-              </form>
             </div>
           </div>
         </div>
       </div>
+      <footer>
+        <div class="copyrights">
+          © This is a personal website of
+          <a href="http://www.linkedin.com/in/dan-wang-au">Dan Wang </a>
+        </div>
+      </footer>
     </div>
-    </section>
-    <footer>
-      <div class="copyrights">
-        © This is a personal website of
-        <a href="http://www.linkedin.com/in/dan-wang-au">Dan Wang </a>
-      </div>
-    </footer>
-  </div>
 
-  
-
-  <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-  <!-- Include a polyfill for ES6 Promises (optional) for IE11 -->
-  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill9/dist/polyfill.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11 -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill9/dist/polyfill.js"></script>
+  </body>
 </html>
