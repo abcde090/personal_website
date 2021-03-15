@@ -57,12 +57,6 @@ const project = () => {
   project_page.style.display = "block";
 };
 
-const toggling = () => {
-  for (var i = 0; i < toggle.length; i += 1) {
-    toggle[i].style.display = "block";
-  }
-  more.style.display = "none";
-};
 
 const read_more = () => {
   for (var i = 0; i < dropdown.length; i += 1) {
