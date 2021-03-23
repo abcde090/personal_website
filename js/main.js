@@ -9,6 +9,14 @@ const dropdown = document.querySelectorAll(".dropdown");
 const more = document.querySelector(".read-more");
 const more_project = document.querySelector(".more-project");
 
+
+const toggling = () => {
+  for (var i=0; i <toggle.length; i +=1 ) {
+    toggle[i].style.display = "block"
+  }
+  more.style.display = "none"
+}
+
 const home = () => {
   homepage.style.display = "block";
   resume_page.style.display = "none";

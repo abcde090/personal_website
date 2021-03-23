@@ -2186,6 +2186,10 @@ img {
 .project-page {
   display: none;
 }
+
+.project-page img {
+  max-height: 180px;
+}
 .project-page h4 {
   font-size: 1em;
 }
@@ -2199,11 +2203,15 @@ img {
 .project-page .main-content {
   margin-bottom: 10px;
 }
+.project-page .main-content .blog-container {
+  margin-bottom: 20px;
+}
 .project-page .main-content .blog-card {
   display: block;
   position: relative;
   margin: 5px;
   padding: 0;
+  height: 100%;
   background: #fff;
   text-align: center;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -2233,7 +2241,22 @@ img {
   padding: 0.8em 1.2em 1.4em;
 }
 .project-page .main-content .blog-card .blog-item-title {
+  color: #424242;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: start;
   margin: 5px 0 0 0;
+}
+.project-page .main-content .blog-card .blog-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.project-page .main-content .blog-card .blog-item-keyword {
+  padding-top: 20px;
+  color: black;
+  font-size: 14px;
+  margin: 0 3px;
 }
 .project-page .main-content .blog-card .post-date {
   display: inline-block;
